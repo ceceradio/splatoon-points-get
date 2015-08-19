@@ -1,0 +1,10 @@
+.bar {
+    display:inline-block;
+    height:20px;
+}
+.bar.blue {
+    background-color:blue;
+}
+.bar.orange {
+    background-color:orange;
+}
