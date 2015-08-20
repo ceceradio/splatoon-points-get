@@ -3,32 +3,40 @@
 <head>
   <meta charset="utf-8">
 
-  <title>splatoon points get</title>
+  <title>Points Get</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <div id="orange">
-    <img src="orangesquid.png"/>
-    <img src="orangesquid.png"/>
-    <img src="orangesquid.png"/>
-    <img src="orangesquid.png"/>
-  </div>
-  <div id="orangeMeter"><span class="bar orange"></span></div>
-  <div id="blueMeter"><span class="bar blue"></span></div>
-  <div id="blue">
-    <img src="bluesquid.png"/>
-    <img src="bluesquid.png"/>
-    <img src="bluesquid.png"/>
-    <img src="bluesquid.png"/>
-  </div>
-  <button id="combat">Combat</button>
-  <button id="reset">Reset</button>
+  <div class="container-fluid">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+      <h1>Points Get</h1>
+      <p>While a squid is alive, it earns points. The first team to fill their bar wins.</p>
+      <p>Press combat to have one of the orange squids fight with the blue squids. There's an equal chance of the following outcomes:</p>
+      <ul>
+        <li>You get splatted, and splat 0 blue squids.</li>
+        <li>You get splatted, and splat 1 blue squid.</li>
+        <li>You get splatted, and splat 2 blue squids.</li>
+        <li>You get splatted, and splat 3 blue squids.</li>
+      </ul>
+      <div id="pointsGet">
+        <div id="orange"><img src="orangesquid.png"/><img src="orangesquid.png"/><img src="orangesquid.png"/><img src="orangesquid.png"/></div>
+        <div id="orangeMeter"><span class="bar orange"></span></div>
+        <div id="blueMeter"><span class="bar blue"></span></div>
+        <div id="blue"><img src="bluesquid.png"/><img src="bluesquid.png"/><img src="bluesquid.png"/><img src="bluesquid.png"/></div>
+        <div class="row">
+          <button class="btn btn-primary col-xs-12" id="combat">Combat</button>
+          <button class="btn btn-primary col-xs-12" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+</div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
